@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icone particolari, https://fontawesomeicons.com/ -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Icona + Titolo del sito -->
+    <title>Rubik</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="left-div">
+        <img id="cube" src="media/white-big-cube.png">
+        <nav id="main-nav">
+            <ul>
+                <li class="main-nav-li">
+                    <div class="dropdown">
+                        <a href="index.html" id="btn-tutorial">TUTORIAL <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li class="dropdown-li"><a href="#sezione1-notazione" class="main-nav-a">SEZIONE #1:
+                                        Notazione
+                                        (Basica)</a></li>
+                                <li class="dropdown-li"><a href="#sezione2-primostrato" class="main-nav-a">SEZIONE #2:
+                                        Primo strato</a></li>
+                                <li class="dropdown-li"><a href="#sezione3-secondostrato" class="main-nav-a">SEZIONE #3:
+                                        Secondo strato</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-nav-li"><a href="timer.html" class="main-nav-a">TIMER <i class='fa fa-clock-o'></i></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="center-div">
+        <section id="sezione1-notazione">
+            <h1 class="stn-headingA">Sezione #1 - Notazione (Basica)</h1>
+            <hr class="hr-heading-container">
+            <p class="stn-text">Per risolvere il cubo di rubik 3x3 si utilizzano degli <b>Algoritimi</b>,
+                nonchè serie di mosse che hanno come scopo finale quello di risolvere il cubo.</p><br>
+            <div class="stn-img-p-container">
+                <p class="stn-text">Qui a destra troviamo le mosse che vengono utilizzate per risolvere il cubo di rubik
+                    3x3 utilizzando il metodo più semplice.<br><br>
+                    <b>U</b> - UP - Rotazione della faccia <i>superiore</i> del cubo di 90° in senso orario.<br>
+                    <b>D</b> - DOWN - Rotazione della faccia <i>inferiore</i> del cubo di 90° in senso orario.<br>
+                    <b>R</b> - RIGHT - Rotazione della faccia <i>destra</i> del cubo di 90° in senso orario.<br>
+                    <b>L</b>- LEFT - Rotazione della faccia <i>sinistra</i> del cubo di 90° in senso orario.<br>
+                    <b>F</b> - FRONT - Rotazione della faccia <i>frontale</i> del cubo di 90° in senso orario.<br>
+                    <b>B</b> - BACK - Rotazione della faccia <i>posteriore</i> del cubo di 90° in senso orario.<br><br>
+                    La presenza di un apostrofo dopo la lettera <b>(')</b> sta ad indicare una <b>rotazione in
+                        senso antiorario di 90°.</b><br><br>
+                    La presenza di un due dopo la lettera <b>(2)</b> sta ad indicare una <b>rotazione doppia della
+                        faccia, cioè una rotazione di
+                        senso antiorario di 180°.</b><br><br>
+                </p>
+                <img class="img-right" src="media/tutorial_3x3/notazione.png" width="650px">
+            </div>
+        </section>
+
+        <section id="sezione2-primostrato">
+            <h1 class="stn-headingA">Sezione #2 - Primo strato</h1>
+            <hr class="hr-heading-container">
+            <p class="stn-text">La prima cosa da fare per risolvere il cubo è quella di <b>scegliere una faccia di
+                    riferimento</b>, nel nostro caso la faccia bianca.<br></p>
+            <h2 class="stn-headingB">STEP #1:</h2>
+            <p class="stn-text">Per poter risolvere il cubo di rubik, è necessario creare una sorta di croce sulla
+                faccia di riferimento, in modo che gli spigoli siano allineati ai
+                centri dei colori corrispondenti, come nelle immagini mostrate qui sotto. Per questo step non
+                esistono degli algoritmi, ma basta
+                semplicemente un po' di intuito.</p>
+            <div class="image-container">
+                <img class="img-right" src="media/tutorial_3x3/croce.png" width="120px">
+                <img class="img-right" src="media/tutorial_3x3/croce2.png" width="120px">
+            </div>
+            <h2 class="stn-headingB">STEP #2:</h2>
+            <p class="stn-text">Il prossimo passaggio consiste nel collocare tutti gli angoli bianchi al loro
+                posto, in modo da completare la faccia bianca.<br>Step 1: collocare gli angoli
+                sopra allo slot in cui vanno inseriti (fig. 1, angolo arancione-blu-bianco)<br>Step 2: eseguire il
+                seguente algoritmo:
+                <b>R U R' U'</b> guardando il cubo in modo che l'angolo da posizionare sia in alto a destra;
+                <br>l'algoritmo, in gergo chiamato <i>Sexy Move</i>, andrà ripetuto fino a quando l'angolo non
+                raggiungerà la sua posizione. (fig. 2)<br>Step 3:
+                ripetere
+                l'algoritmo per tutti gli angoli.
+            </p>
+            <div class="image-container">
+                <img class="img-right" src="media/tutorial_3x3/facciabianca.png" width="120px">
+                <img class="img-right" src="media/tutorial_3x3/facciabianca2.png" width="120px">
+            </div>
+            <h2 class="stn-headingB">STEP #3:</h2>
+            <p class="stn-text">Una volta posizionati tutti gli angoli, come potrai notare tu stesso, la faccia bianca
+                sarà risolta.
+            </p>
+            <div class="image-container">
+                <img class="img-right" src="media/tutorial_3x3/facciabianca3.png" width="120px">
+                <img class="img-right" src="media/tutorial_3x3/facciabianca4.png" width="120px">
+            </div>
+        </section>
+
+        <section id="sezione3-secondostrato">
+            <h1 class="stn-headingA">Sezione #3 - Secondo strato</h1>
+            <hr class="hr-heading-container">
+            <p class="stn-text">Per procedere con la risoluzione del cubo è necessario inserire gli spigoli che non
+                hanno il colore della faccia superiore nello strato centrale del cubo.<br>Il primo passaggio da
+                effettuare è quello di allineare lo spigolo che si vuole inserir, che si troverà necessariamente nella
+                faccia superiore, con il centro del rispettivo colore, come mostrato nelle figure qui sotto. Possiamo
+                trovarci di fronte a tre casi:</p>
+            <h2 class="stn-headingB">CASO #1:</h2>
+            <p class="stn-text">Il colore dello spigolo nello strato superiore corrisponde al colore del centro sulla
+                faccia di sinistra.<br>L'algoritmo per posizionare lo spigolo nel modo corretto è il seguente: <b>U' L'
+                    U
+                    L U F U' F'</b>.<br>La serie di mosse va eseguita guardando la faccia dove lo spigolo è allineato
+                con il centro, in questo caso quella blu.</p>
+            <div class="image-container">
+                <img class="img-right" src="media/tutorial_3x3/secondostrato.png" width="120px">
+                <img class="img-right" src="media/tutorial_3x3/secondostrato2.png" width="120px">
+            </div>
+            <h2 class="stn-headingB">CASO #2:</h2>
+            <p class="stn-text">Il colore dello spigolo nello strato superiore corrisponde al colore del centro sulla
+                faccia di destra.<br>L'algoritmo per posizionare lo spigolo nel modo corretto è il seguente, ed è
+                opposto rispetto al precedente: <b>U R U'
+                    R' U' F' U F</b>.<br>La serie di mosse va eseguita guardando la faccia dove lo spigolo è allineato
+                con il centro, in questo caso quella rossa.</p>
+            <div class="image-container">
+                <img class="img-right" src="media/tutorial_3x3/secondostrato3.png" width="120px">
+                <img class="img-right" src="media/tutorial_3x3/secondostrato4.png" width="120px">
+            </div>
+            <h2 class="stn-headingB">CASO #3:</h2>
+            <p class="stn-text">Lo spigolo si trova già nello slot corretto, ma i suoi colori sono invertiti.<br>In
+                questo caso basterà eseguire uno dei due algoritmi elencati in precedenza (in base al caso in cui ci
+                troviamo), in modo da scambiare i due spigoli, e successivamente posizionare in modo corretto lo spigolo
+                basandoci sui casi analizzati in precedenza.
+            <div class="image-container">
+                <img class="img-right" src="media/tutorial_3x3/secondostrato5.png" width="120px">
+                <img class="img-right" src="media/tutorial_3x3/secondostrato6.png" width="120px">
+                <img class="img-right" src="media/tutorial_3x3/secondostrato7.png" width="120px">
+            </div>
+    </div>
+    </section>
+    </div>
+
+    <div id="right-div">
+
+    </div>
+</body>
+
+</html>
