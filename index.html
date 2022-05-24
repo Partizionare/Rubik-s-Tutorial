@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/timer.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Icone particolari, https://fontawesomeicons.com/ -->
@@ -27,13 +28,25 @@
                         <a href="index.html" id="btn-tutorial">TUTORIAL <i class="fa fa-caret-down"></i></a>
                         <div class="dropdown-content">
                             <ul>
-                                <li class="dropdown-li"><a href="#sezione1-notazione" class="main-nav-a">SEZIONE #1:
+                                <li class="dropdown-li"><a href="#sezione1" class="main-nav-a">SEZIONE #1:
                                         Notazione
                                         (Basica)</a></li>
-                                <li class="dropdown-li"><a href="#sezione2-primostrato" class="main-nav-a">SEZIONE #2:
+                                <li class="dropdown-li"><a href="#sezione2" class="main-nav-a">SEZIONE #2:
                                         Primo strato</a></li>
-                                <li class="dropdown-li"><a href="#sezione3-secondostrato" class="main-nav-a">SEZIONE #3:
+                                <li class="dropdown-li"><a href="#sezione3" class="main-nav-a">SEZIONE #3:
                                         Secondo strato</a>
+                                </li>
+                                <li class="dropdown-li"><a href="#sezione4" class="main-nav-a">SEZIONE #4:
+                                        Creazione della croce superiore</a>
+                                </li>
+                                <li class="dropdown-li"><a href="#sezione5" class="main-nav-a">SEZIONE #5:
+                                        Orientamento della croce superiore</a>
+                                </li>
+                                <li class="dropdown-li"><a href="#sezione6" class="main-nav-a">SEZIONE #6:
+                                        Posizionamento degli angoli superiori</a>
+                                </li>
+                                <li class="dropdown-li"><a href="#sezione7" class="main-nav-a">SEZIONE #7:
+                                        Orientamento degli angoli superiori</a>
                                 </li>
                             </ul>
                         </div>
@@ -46,7 +59,7 @@
     </div>
 
     <div id="center-div">
-        <section id="sezione1-notazione">
+        <section id="sezione1">
             <h1 class="stn-headingA">Sezione #1 - Notazione (Basica)</h1>
             <hr class="hr-heading-container">
             <p class="stn-text">Per risolvere il cubo di rubik 3x3 si utilizzano degli <b>Algoritimi</b>,
@@ -57,20 +70,20 @@
                     <b>U</b> - UP - Rotazione della faccia <i>superiore</i> del cubo di 90° in senso orario.<br>
                     <b>D</b> - DOWN - Rotazione della faccia <i>inferiore</i> del cubo di 90° in senso orario.<br>
                     <b>R</b> - RIGHT - Rotazione della faccia <i>destra</i> del cubo di 90° in senso orario.<br>
-                    <b>L</b>- LEFT - Rotazione della faccia <i>sinistra</i> del cubo di 90° in senso orario.<br>
+                    <b>L</b> - LEFT - Rotazione della faccia <i>sinistra</i> del cubo di 90° in senso orario.<br>
                     <b>F</b> - FRONT - Rotazione della faccia <i>frontale</i> del cubo di 90° in senso orario.<br>
                     <b>B</b> - BACK - Rotazione della faccia <i>posteriore</i> del cubo di 90° in senso orario.<br><br>
                     La presenza di un apostrofo dopo la lettera <b>(')</b> sta ad indicare una <b>rotazione in
                         senso antiorario di 90°.</b><br><br>
                     La presenza di un due dopo la lettera <b>(2)</b> sta ad indicare una <b>rotazione doppia della
-                        faccia, cioè una rotazione di
+                        faccia, cioè una rotazione in
                         senso antiorario di 180°.</b><br><br>
                 </p>
                 <img class="img-right" src="media/tutorial_3x3/notazione.png" width="650px">
             </div>
         </section>
 
-        <section id="sezione2-primostrato">
+        <section id="sezione2">
             <h1 class="stn-headingA">Sezione #2 - Primo strato</h1>
             <hr class="hr-heading-container">
             <p class="stn-text">La prima cosa da fare per risolvere il cubo è quella di <b>scegliere una faccia di
@@ -79,8 +92,8 @@
             <p class="stn-text">Per poter risolvere il cubo di rubik, è necessario creare una sorta di croce sulla
                 faccia di riferimento, in modo che gli spigoli siano allineati ai
                 centri dei colori corrispondenti, come nelle immagini mostrate qui sotto. Per questo step non
-                esistono degli algoritmi, ma basta
-                semplicemente un po' di intuito.</p>
+                esistono degli algoritmi, ma basta semplicemente un po' di intuito.<br><i>Le due immagini qui sotto
+                    rappresentano lo stesso cubo, semplicemente visto da due angolazioni opposte.</i></p>
             <div class="image-container">
                 <img class="img-right" src="media/tutorial_3x3/croce.png" width="120px">
                 <img class="img-right" src="media/tutorial_3x3/croce2.png" width="120px">
@@ -93,8 +106,7 @@
                 <b>R U R' U'</b> guardando il cubo in modo che l'angolo da posizionare sia in alto a destra;
                 <br>l'algoritmo, in gergo chiamato <i>Sexy Move</i>, andrà ripetuto fino a quando l'angolo non
                 raggiungerà la sua posizione. (fig. 2)<br>Step 3:
-                ripetere
-                l'algoritmo per tutti gli angoli.
+                ripetere l'algoritmo per tutti gli angoli.
             </p>
             <div class="image-container">
                 <img class="img-right" src="media/tutorial_3x3/facciabianca.png" width="120px">
@@ -102,15 +114,15 @@
             </div>
             <h2 class="stn-headingB">STEP #3:</h2>
             <p class="stn-text">Una volta posizionati tutti gli angoli, come potrai notare tu stesso, la faccia bianca
-                sarà risolta.
-            </p>
+                sarà risolta.<br><i>Le due immagini qui sotto rappresentano lo stesso cubo, semplicemente visto da due
+                    angolazioni opposte.</i></p>
             <div class="image-container">
                 <img class="img-right" src="media/tutorial_3x3/facciabianca3.png" width="120px">
                 <img class="img-right" src="media/tutorial_3x3/facciabianca4.png" width="120px">
             </div>
         </section>
 
-        <section id="sezione3-secondostrato">
+        <section id="sezione3">
             <h1 class="stn-headingA">Sezione #3 - Secondo strato</h1>
             <hr class="hr-heading-container">
             <p class="stn-text">Per procedere con la risoluzione del cubo è necessario inserire gli spigoli che non
@@ -149,8 +161,8 @@
                 <img class="img-right" src="media/tutorial_3x3/secondostrato7.png" width="120px">
             </div>
         </section>
-        <section id="sezione4-crocegialla">
-            <h1 class="stn-headingA">Sezione #4 - Croce gialla</h1>
+        <section id="sezione4">
+            <h1 class="stn-headingA">Sezione #4 - Creazione della croce superiore</h1>
             <hr class="hr-heading-container">
             <p class="stn-text">Il prossimo passaggio consiste nell'andare a creare la croce nello strato superiore; nel
                 nostro caso, avendo preso come faccia di riferimento quello bianca, dovremo creare la croce gialla. In
@@ -187,11 +199,118 @@
             <div class="image-container">
                 <img class="img-right" src="media/tutorial_3x3/crocegialla4.png" width="120px">
             </div>
-    </div>
-    </section>
+        </section>
+        <section id="sezione5">
+            <h1 class="stn-headingA">Sezione #5 - Orientamento della croce superiore</h1>
+            <hr class="hr-heading-container">
+            <p class="stn-text">In questo passaggio andremo ad orientare la croce superiore in modo che gli spigoli
+                siano allineati ai centri del colore corrispondente.<br>Come per la Sezione #4 ci basterà un solo
+                algoritmo, il quale potrà essere utilizzato da 0 a 2 volte.<br> L'algoritmo è il seguente: <b>R U R' U R
+                    U2 R'</b></p>
+            <h2 class="stn-headingB">CASO #1:</h2>
+            <p class="stn-text">La croce superiore presenta due spigoli <b>opposti</b> allineati correttamente.
+                <br>L'algoritmo va effettuato tenendo uno dei due spigoli posizionati bene di fronte a noi, con l'altro
+                spigolo dietro.<br>Una volta risolto questo caso passeremo al caso #2.<br>In questo caso
+                l'algoritmo andrà effettuato guardando o la faccia verde o la faccia blu.<br><i>Le due immagini qui
+                    sotto
+                    rappresentano lo stesso cubo, semplicemente visto da due angolazioni opposte.</i>
+            <div class="image-container">
+                <img class="img-right" src="media/tutorial_3x3/orientamentocrocegialla.png" width="120px">
+                <img class="img-right" src="media/tutorial_3x3/orientamentocrocegialla2.png" width="120px">
+            </div>
+            <h2 class="stn-headingB">CASO #2:</h2>
+            <p class="stn-text">La croce superiore presenta due spigoli <b>adiacenti</b> allineati
+                correttamente.<br>L'algoritmo va effettuato tenendo uno dei due spigoli posizionati bene alla nostra
+                destra, con l'altro spigolo dietro.<br>In questo caso
+                l'algoritmo andrà effettuato guardando la faccia blu.<br>N.B. Dopo aver effettuato l'algoritmo è
+                necessario effettuare un'ulteriore <b>U</b> per allineare la croce correttamente.<br><i>Le due immagini
+                    qui sotto
+                    rappresentano lo stesso cubo, semplicemente visto da due angolazioni opposte.</i></p>
+            <div class="image-container">
+                <img class="img-right" src="media/tutorial_3x3/orientamentocrocegialla3.png" width="120px">
+                <img class="img-right" src="media/tutorial_3x3/orientamentocrocegialla4.png" width="120px">
+            </div>
+            <h2 class="stn-headingB">CASO #3:</h2>
+            <p class="stn-text">La croce superiore presenta tutti gli spigoli allineati
+                correttamente.<br>Questo è il caso più fortunato e dunque non è necessario effettuare alcun
+                algoritmo.<br><i>Le due immagini qui sotto rappresentano lo stesso cubo, semplicemente visto da due
+                    angolazioni opposte.</i>
+            <div class="image-container">
+                <img class="img-right" src="media/tutorial_3x3/orientamentocrocegialla4.png" width="120px">
+                <img class="img-right" src="media/tutorial_3x3/orientamentocrocegialla5.png" width="120px">
+            </div>
+        </section>
+        <section id="sezione6">
+            <h1 class="stn-headingA">Sezione #6 - Posizionamento degli angoli superiori</h1>
+            <hr class="hr-heading-container">
+            <p class="stn-text">Ci stiamo avvicinando alla risoluzione del cubo, come puoi notare ci mancano soltanto
+                gli angoli superiori! Per posizionare correttamente gli angoli superiori occorre trovare un angolo che
+                che sia posizionato tra i centri dei suoi colori, come mostrato negli esempi mostrati qui
+                sotto.</p>
+            <div class="image-container">
+                <img class="img-right" src="media/tutorial_3x3/posizionamentoangoli2.png" width="120px">
+                <img class="img-right" src="media/tutorial_3x3/posizionamentoangoli.png" width="120px">
+            </div>
+            <h2 class="stn-headingB">STEP #1:</h2>
+            <p class="stn-text">Posizionare l'angolo con i colori giusti alla nostra <b>sinistra</b> (in questo
+                l'algoritmo andrà eseguito guardando frontalmente la faccia verde).
+            <div class="image-container">
+                <img class="img-right" src="media/tutorial_3x3/posizionamentoangoli3.png" width="120px">
+            </div>
+            <h2 class="stn-headingB">STEP #2:</h2>
+            <p class="stn-text">Eseguire il seguente algoritmo: <b>R U' L' U R' U' L U</b>
+            <div class="image-container">
+                <img class="img-right" src="media/tutorial_3x3/posizionamentoangoli4.png" width="120px">
+            </div>
+            <h2 class="stn-headingB">STEP #3:</h2>
+            <p class="stn-text">L'algoritmo andrà ripetuto fino a quando tutti gli
+                angoli non si troveranno nella posizione corretta (con i colori ed i rispettivi centri che
+                corrispondono).<i>Le due immagini qui sotto rappresentano lo stesso cubo, semplicemente visto da due
+                    angolazioni opposte.</i>
+            </p>
+            <div class="image-container">
+                <img class="img-right" src="media/tutorial_3x3/posizionamentoangoli5.png" width="120px">
+                <img class="img-right" src="media/tutorial_3x3/posizionamentoangoli6.png" width="120px">
+            </div>
+        </section>
+        <section id="sezione7">
+            <h1 class="stn-headingA">Sezione #7 - Orientamento degli angoli superiori</h1>
+            <hr class="hr-heading-container">
+            <p class="stn-text">Questo è l'ultimo passaggio che ci separa dalla risoluzione del cubo di rubik.<br>Per
+                orientare gli angoli correttamente ci serviranno la sexy move <b>(R U R' U')</b> e un po' di attenzione.
+                sotto.</p>
+            <h2 class="stn-headingB">STEP #1:</h2>
+            <p class="stn-text">Tenere in mano il cubo in modo che la faccia gialla sia rivolta verso il basso,
+                successivamente prendere una faccia frontale di riferimento, e guardare sempre quella per tutta la
+                durata di quest'ultimo passaggio (in questo caso la faccia arancione).
+            <div class="image-container">
+                <img class="img-right" src="media/tutorial_3x3/orientamentoangoli4.png" width="120px">
+            </div>
+            <h2 class="stn-headingB">STEP #2:</h2>
+            <p class="stn-text">Portare un angolo scombinato in basso a destra.
+            <div class="image-container">
+                <img class="img-right" src="media/tutorial_3x3/orientamentoangoli2.png" width="120px">
+            </div>
+            <h2 class="stn-headingB">STEP #3:</h2>
+            <p class="stn-text">Eseguire ripetutamente la sexy move <b>(R U R' U')</b> finchè l'angolo non sarà
+                orientato correttamente.
+            </p>
+            <div class="image-container">
+                <img class="img-right" src="media/tutorial_3x3/orientamentoangoli3.png" width="120px">
+            </div>
+            <h2 class="stn-headingB">STEP #4:</h2>
+            <p class="stn-text">Ripetere il procedimento per tutti gli angoli.</p>
+            <p class="stn-text">Complimenti, hai risolto il cubo di rubik! :)</p>
+            <div class="image-container">
+                <img class="img-right" src="media/tutorial_3x3/orientamentoangoli.png" width="120px">
+            </div>
+        </section>
     </div>
 
     <div id="right-div"></div>
+    <button id="scrollbtn" onclick="scrollup()">
+        <i class='fa fa-angle-up' style='color: rgb(188, 22, 22)'></i>
+    </button>
 </body>
 
 </html>

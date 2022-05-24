@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/timer.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
@@ -27,11 +28,26 @@
                         <a href="index.html" id="btn-tutorial">TUTORIAL <i class="fa fa-caret-down"></i></a>
                         <div class="dropdown-content">
                             <ul>
-                                <li class="dropdown-li"><a href="#" class="main-nav-a">SEZIONE #1: Croce</a></li>
-                                <li class="dropdown-li"><a href="#" class="main-nav-a">SEZIONE #2: Angoli
-                                        bianchi</a></li>
-                                <li class="dropdown-li"><a href="#" class="main-nav-a">SEZIONE #3: Secondo
-                                        strato</a></li>
+                                <li class="dropdown-li"><a href="index.html#sezione1" class="main-nav-a">SEZIONE #1:
+                                        Notazione
+                                        (Basica)</a></li>
+                                <li class="dropdown-li"><a href="index.html#sezione2" class="main-nav-a">SEZIONE #2:
+                                        Primo strato</a></li>
+                                <li class="dropdown-li"><a href="index.html#sezione3" class="main-nav-a">SEZIONE #3:
+                                        Secondo strato</a>
+                                </li>
+                                <li class="dropdown-li"><a href="index.html#sezione4" class="main-nav-a">SEZIONE #4:
+                                        Creazione della croce superiore</a>
+                                </li>
+                                <li class="dropdown-li"><a href="index.html#sezione5" class="main-nav-a">SEZIONE #5:
+                                        Orientamento della croce superiore</a>
+                                </li>
+                                <li class="dropdown-li"><a href="index.html#sezione6" class="main-nav-a">SEZIONE #6:
+                                        Posizionamento degli angoli superiori</a>
+                                </li>
+                                <li class="dropdown-li"><a href="index.html#sezione7" class="main-nav-a">SEZIONE #7:
+                                        Orientamento degli angoli superiori</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -52,7 +68,7 @@
                     barra per
                     fermarlo.</span>
             </div>
-            <div id="tabella1">
+            <div id="tabelle">
                 <table>
                     <thead>
                         <tr>
@@ -62,8 +78,7 @@
                     </thead>
                     <tbody id="tbody_tempo"></tbody>
                 </table>
-            </div>
-            <div id="tabella2">
+
                 <table>
                     <thead>
                         <tr>
@@ -86,8 +101,10 @@
         </section>
     </div>
 
-    <div id="right-div">
-    </div>
+    <div id="right-div"></div>
+    <button id="scrollbtn" onclick="scrollup()">
+        <i class='fa fa-angle-up' style='color: rgb(188, 22, 22)'></i>
+    </button>
 </body>
 
 </html>
