@@ -40,7 +40,11 @@ function timerFunc() {
         sec = parseInt(sec);
 
         dec += 1;
-
+        
+        if (dec < 10){
+            dec = "0" + dec;
+        }
+        
         if (dec == 100) {
             sec += 1;
             dec = 0;
