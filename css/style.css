@@ -24,7 +24,7 @@ body {
 #center-div {
     float: left;
     position: absolute;
-    width: calc(100% - 500px);
+    width: calc(100% - 700px);
     height: 100%;
     margin-left: 500px;
     background-color: var(--background-1);
@@ -33,7 +33,7 @@ body {
 #right-div {
     background-color: var(--primary-color);
     position: fixed;
-    margin-left: 1848px;
+    margin-left: 1831.2px;
     width: 200px;
     height: 100%;
 }
