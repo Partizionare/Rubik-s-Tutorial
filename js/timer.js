@@ -36,22 +36,10 @@ function peggiore(valore) {
 
 function timerFunc() {
     if (started) {
-        dec = parseInt(dec);
-        sec = parseInt(sec);
-
-        dec += 1;
+        dec = parseFloat(dec);
+        dec += 0.01;
         
-        if (dec < 10){
-            dec = "0" + dec;
-        }
-        
-        if (dec == 100) {
-            sec += 1;
-            dec = 0;
-        }
-
-        document.getElementById('timer').innerHTML = sec + "." + dec;
-
+        document.getElementById('timer').innerHTML = dec.toFixed(2);
         setTimeout(timerFunc, 10);
     }
 }
@@ -64,7 +52,9 @@ function startTimer() {
 }
 
 document.addEventListener("keyup", (event) => {
+    
     if (event.keyCode == 32) {
+        document.getElementById('spacebar-help').classList.remove('active');
         space = false;
         if (!space && !resetted) {
             startTimer();
@@ -73,14 +63,16 @@ document.addEventListener("keyup", (event) => {
 })
 
 document.addEventListener("keydown", (event) => {
+   
     if (event.keyCode == 32) {
+        document.getElementById('spacebar-help').classList.add('active');
         space = true;
         resetted = false;
-        t = parseFloat(sec + "." + dec);
+        t = dec.toFixed(2);
         if (space && t != 0.00) {
             // Aggiunta valori alla tabella
             var tbody = document.getElementById('tbody_tempo');
-            tbody.innerHTML += "<tr><td>" + n + "</td><td>" + sec + "." + dec + "</td></tr>";
+            tbody.innerHTML += "<tr><td>" + n + "</td><td>" +dec.toFixed(2)+ "</td></tr>";
             // Array dei tempi      
             tempi[n] = t;
             n++;
@@ -91,8 +83,7 @@ document.addEventListener("keydown", (event) => {
             // Reset Cronometro 
             started = false;
             dec = 0;
-            sec = 0;
-            document.getElementById('timer').innerHTML = "0.00";
+            document.getElementById('timer').innerHTML = dec.toFixed(2);
             resetted = true;
         }
     }

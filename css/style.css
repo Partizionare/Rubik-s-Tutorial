@@ -1,5 +1,6 @@
 :root {
     --primary-color: rgb(188, 22, 22);
+    --primary-dark-color: rgb(134, 17, 17);;
     --background-1: rgb(255, 255, 255);
     --background-2: rgb(245, 245, 245);
     --background-3: rgb(235, 235, 235);
@@ -23,7 +24,7 @@ body {
 #center-div {
     float: left;
     position: absolute;
-    width: 1348px;
+    width: calc(100% - 500px);
     height: 100%;
     margin-left: 500px;
     background-color: var(--background-1);
@@ -167,11 +168,16 @@ section {
     margin-right: 10px;
     position: relative;
     height: 80px;
-    width: 1296.8px;
+    /*width: 1296.8px;*/
     background-color: var(--primary-color);
     text-align: center;
     line-height: 80px;
 }
+
+#spacebar-help.active {
+    background-color: var(--primary-dark-color);
+}
+
 
 #testo-sb-help {
     font-family: 'Source Sans Pro';
